@@ -23,13 +23,8 @@
   src:url(DobkinPlain.ttf) format('truetype'),
       url(DobkinPlain.woff) format('woff');
 }
-/*linking to web fonts to be used later */
+/*linking to fonts to be applied later*/
 
-
-/*Application of Web fonts*/
-
-
-/*Setting background colors and text colors */
 body{
   background-color: rgb(159, 195, 200);
 }
@@ -46,20 +41,55 @@ section#rightcol > nav > h2 {
   color: rgb(84, 105, 108);
   font-variant: small-caps;
   font-style: oblique;
+  margin: 0;
+  padding: 10px 0px 0px 0px;
 }
+/*style for headings in right column*/
 
-section#rightcol > nav a {
+section#rightcol > nav ul {
   font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  list-style: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
+/*removing bullets and indentation for nav list in right column*/
 
 section#rightcol > nav ul a:link, nav ul a:visited {
   text-decoration: none;
   color: hsla(0, 100%, 100%, 0.5);
 }
 
+
 section#rightcol > nav ul a:hover, nav ul a:active{
   color: rgb(84, 105, 108);
 }
+
+/*love hate technique for nav lists...*/
+
+section#rightcol blockquote {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  font-size: .8em;
+  margin: 0;
+  padding: 20px 10px 0px 0px;
+  color: hsla(0, 0%, 0%, 0.8);
+}
+/*style for block quote in right column*/
+
+section#rightcol blockquote::before {
+  content: open-quote;
+  font-size: 1em;
+  font-family: serif;
+}
+
+section#rightcol blockquote::after {
+  content: close-quote;
+  font-size: 1em;
+  font-family: serif;
+}
+
+/*adding open and close quote content to block quote...pseudo element*/
+
 
 section#leftcol > h1 {
   font-family: champagne, cursive;
@@ -68,12 +98,44 @@ section#leftcol > h1 {
   margin:0px;
   text-align: center;
 }
+/*styling "welcome" headline in left column*/
 
-#leftcol > aside {
+section#leftcol > aside {
   background-color: hsla(0, 0%, 50%, 0.5);
   padding: 20px;
   color: hsla(0, 0%, 0%, 0.8);
 }
+
+section#leftcol aside h1 {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+section#leftcol aside ul {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  margin: 0;
+  padding: 10px;
+}
+
+section#leftcol aside h2 {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  font-size: 1em;
+
+}
+
+section#leftcol aside ul a {
+  text-decoration: none;
+  color: hsla(0, 0%, 100%, 0.7);
+}
+/*styles the links found in the ul in the aside...removes underline and changes color*/
+
+section#leftcol p {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  margin: 10px;
+  color: hsla(0, 0%, 0%, 0.8);
+}
+/*styling main paragraphs in left column*/
 
   header > nav a {
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
@@ -91,14 +153,8 @@ section#leftcol > h1 {
   header > nav ul a:hover, nav ul a:active {
     background-color: hsla(0, 0%, 100%, 0.7);
     color: hsla(0, 0%, 25%, 0.7);
-/*top navigation styles. using semi-transparent colors, hovering, new font, no text decoration*/
   }
+/*top navigation styles. using semi-transparent colors, hovering, new font, no text decoration
+
+
 }
-
-/*Use of pseudo-elements and pseudo-classes*/
-
-
-/*Modifying padding space and margin space around an element*/
-
-
-/*Style rule to generate content in the rendered page*/

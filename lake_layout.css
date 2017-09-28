@@ -4,7 +4,7 @@
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 2
    Case Problem 4
-   
+
    The Great Lakescape Lodge Layout Styles
    Filename: lake_layout.css
 
@@ -43,14 +43,14 @@ footer {
 	clear: both;
 }
 
-address, article, aside, blockquote, body, cite, 
-div, dl, dt, dd, em, figcaption, figure, footer, 
-h1, h2, h3, h4, h5, h6, header, html, img, 
+address, article, aside, blockquote, body, cite,
+div, dl, dt, dd, em, figcaption, figure, footer,
+h1, h2, h3, h4, h5, h6, header, html, img,
 li, main, nav, ol, p, section, span, ul {
 
    -webkit-box-sizing: border-box;
    -moz-box-sizing: border-box;
-   box-sizing: border-box;  
+   box-sizing: border-box;
 }
 
 
@@ -80,7 +80,7 @@ header > nav a {
 /* Section Layout */
 
 section#leftcol aside {
-	width: 42%;
+	width: 45%;
 	float: left;
 	margin-left: 2.5%;
 	margin-right: 2.5%;
@@ -92,5 +92,3 @@ section#leftcol img {
 	width: 100%;
 	display: block;
 }
-
-
